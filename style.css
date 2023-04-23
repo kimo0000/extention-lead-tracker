@@ -1,0 +1,170 @@
+*, *::after, *::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+form {
+    min-width: 450px;
+    width: 60%;
+    margin: 50px auto;
+    padding: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+.content {
+    padding: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+form input[type="submit"] {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f50;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    width: 25%;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0px 4px 2px rgb(163, 4, 4);
+    transform: translateY(0px);
+    transition: .3s;
+}
+
+form input[type="submit"]:hover {
+    background-color: greenyellow;
+    color: #222;
+}
+
+form input[type="submit"]:active {
+    box-shadow: 0px 0px 0px;
+    transform: translateY(4px);
+}
+
+form .delete {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f50;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    width: 25%;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0px 4px 2px rgb(163, 4, 4);
+    transform: translateY(0px);
+    transition: .3s;
+    text-align: center;
+}
+
+form .delete:hover {
+    background-color: greenyellow;
+    color: #222;
+}
+
+form .delete:active {
+    box-shadow: 0px 0px 0px;
+    transform: translateY(4px);
+}
+
+form .save {
+    padding: 8px;
+    border-radius: 5px;
+    background-color: #f50;
+    font-weight: 700;
+    color: #fff;
+    display: inline-block;
+    width: 25%;
+    margin: 0 auto;
+    cursor: pointer;
+    box-shadow: 0px 4px 2px rgb(163, 4, 4);
+    transform: translateY(0px);
+    transition: .3s;
+    text-align: center;
+}
+
+form .save:hover {
+    background-color: greenyellow;
+    color: #222;
+}
+
+form .save:active {
+    box-shadow: 0px 0px 0px;
+    transform: translateY(4px);
+}
+
+form .listes {
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form .listes .liste {
+    padding: 5px 8px;
+    background-color: #f50;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+form .listes .liste a {
+    color: #fff;
+    padding: 10px;
+}
+
+form .listes .liste .close {
+    position: absolute;
+    height: 100%;
+    width: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    padding: 1px;
+    font-size: 15px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+form .listes .liste .close:hover {
+    background-color: royalblue;
+    color: #fff;
+}
+
+
